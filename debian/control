@@ -1,0 +1,24 @@
+Source: arduino-ipv6ethershield
+Priority: extra
+Maintainer: Olivier Mehani <shtrom@lxiv.narf.ssji.net>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Section: libs
+Homepage: https://sites.google.com/site/ghoelzl/ipv6ethershield
+#Vcs-Git: git://git.debian.org/collab-maint/arduino-ipv6ethershield.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/arduino-ipv6ethershield.git;a=summary
+
+Package: arduino-ipv6ethershield
+Section: libs
+Architecture: any
+Depends: arduino-core
+Description: IPv6 for the Arduino platform
+ This library works with ENC28J60 based Ethernet Shields like that from
+ http://www.ekitszone.com. It is ported from the uipv6 network stack from
+ http://www.sics.se/contiki/. The ENC28J60 library is from Guido Socher. The
+ uipv6 library was isolated by http://www.shapeshifter.se/code/uipv6/.  There is
+ an additional wrapper class with initialization methods, so the sketch files
+ should be pretty simple. Included in the library are two examples:
+ IPv6TelnetServer, which can put/get the status of an attached LED and as well
+ as information about the free RAM bytes.  IPv6WebServer, where which exposes
+ the current values of the analog input pins.
