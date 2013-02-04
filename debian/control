@@ -10,7 +10,7 @@ Homepage: https://sites.google.com/site/ghoelzl/ipv6ethershield
 
 Package: arduino-ipv6ethershield
 Section: libs
-Architecture: any
+Architecture: all
 Depends: arduino-core
 Description: IPv6 for the Arduino platform
  This library works with ENC28J60 based Ethernet Shields like that from
